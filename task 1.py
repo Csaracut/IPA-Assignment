@@ -7,17 +7,17 @@ from skimage.util import random_noise
 
 def graph(grayscale_resized, noisy_image, laplace_filter, canny_filter):
     '''Defines a function to plots the grayscale image and noisy image with and without laplace and canny filters applied'''
-    fig, ax = plt.subplots(1, 4, figsize=(8, 4))
+    fig, (ax1, ax2, ax3, ax4) = plt.subplots(1, 4, figsize=(8, 4))
 
-    ax[0].imshow(grayscale_resized)
-    ax[1].imshow(noisy_image)
-    ax[2].imshow(laplace_filter)
-    ax[3].imshow(canny_filter)
+    ax1.imshow(grayscale_resized)
+    ax2.imshow(noisy_image)
+    ax3.imshow(laplace_filter)
+    ax4.imshow(canny_filter)
     
-    ax[0].set_title('Grayscale Resized')
-    ax[1].set_title('Noisy image')
-    ax[2].set_title('laplace filter')
-    ax[3].set_title('Canny filter')
+    ax1.set_title('Grayscale Resized')
+    ax2.set_title('Noisy image')
+    ax3.set_title('laplace filter')
+    ax4.set_title('Canny filter')
 
     fig.tight_layout()
     
