@@ -1,12 +1,7 @@
-from scipy import ndimage as ndi
 import numpy as np
 import matplotlib.pyplot as plt
-from skimage.transform import resize, rotate
-from skimage import io, filters, measure, morphology, img_as_float
-from skimage.filters import threshold_otsu, gaussian
-from skimage.color import rgb2gray, label2rgb
-from skimage.measure import label, regionprops, regionprops_table
-from skimage.util import random_noise
+from skimage import io, img_as_float
+from skimage.color import rgb2gray
 from skimage.feature import match_template, peak_local_max
 
 
