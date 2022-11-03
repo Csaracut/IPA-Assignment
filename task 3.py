@@ -1,5 +1,4 @@
 import numpy as np
-import matplotlib.patches as mpatches
 import matplotlib.pyplot as plt
 from skimage import io
 from skimage.color import rgb2gray, label2rgb
